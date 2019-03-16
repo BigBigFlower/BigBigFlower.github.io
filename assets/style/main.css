@@ -39,7 +39,30 @@ ul, ol, dl, figure,
 main {
   display: block;
   /* Default value of `display` of `main` element is 'inline' in IE 11. */ }
-
+.home {
+  position: relative;
+}
+.blog-name {
+  position: absolute;
+  top: 1px;
+  left: 55px;
+  font-size: 34px;
+  font-weight: bold;
+}
+.flower-icon {
+  position: relative;
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  background-color: #008080;
+}
+.flower-icon img {
+  position: absolute;
+  top: 2px;
+  left: 0;
+  height: 40px;
+  width: 40px;
+}
 /**
  * Images
  */
@@ -257,11 +280,13 @@ table {
  */
 .site-footer {
   border-top: 1px solid #e8e8e8;
-  padding: 30px 0; }
+  padding: 0; }
 
 .footer-heading {
-  font-size: 18px;
-  margin-bottom: 15px; }
+  font-size: 9px;
+  color: #828282;
+  margin-top: 10px;
+  margin-bottom: 10px; }
 
 .contact-list,
 .social-media-list {
@@ -318,14 +343,36 @@ table {
   font-size: 28px; }
 
 .post-list {
+  margin-top: 66px;
   margin-left: 0;
   list-style: none; }
-  .post-list > li {
-    margin-bottom: 30px; }
+
+.post-list > li {
+  margin-bottom: 30px; }
+
+.post-head {
+  padding: 0;
+}
+
+.post-decription {
+  font-size: 14px;
+  font-weight: bold;
+}
+
+.post-head a {
+  font-family: 'Segoe UI','Avenir Next','Helvetica Neue','Helvetica','Arial',sans-serif;
+  font-size: 28px;
+  font-weight: bold;
+  width:fit-content;
+  width:-webkit-fit-content;
+  width:-moz-fit-content;
+}
 
 .post-meta {
-  font-size: 14px;
-  color: #828282; }
+  font-size: 13px;
+  color: #828282;
+  margin-top: 0;
+}
 
 .post-link {
   display: block;
